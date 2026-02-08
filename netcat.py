@@ -10,7 +10,9 @@ def execute(cmd):
     cmd = cmd.strip()
     if not cmd:
         return
-    output = subprocess.check_output(shlex.split(cmd), stderr=subprocess.STDOUT)
+    output = subprocess.check_output(shlex.split(cmd), stderr=subprocess.STDOUT) # shlex.split rozdziela komende i przekazuje je po kolei
+    # tu komende przekazujemy jako full string który zostanie wykonany na serwerze. pozwala na pipowanie komend
+    # output = subprocess.check_output(cmd, shell=True, stderr=subprocess.STDOUT)
 
     return output.decode()
 
