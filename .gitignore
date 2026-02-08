@@ -1,0 +1,18 @@
+# IDE (PyCharm, VS Code)
+.idea/
+.vscode/
+*.iml
+
+# Python - kompilaty i cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Środowiska wirtualne (widzę venv3 na Twoim screenie!)
+venv/
+venv3/
+env/
+
+# Systemowe
+.DS_Store
+thumbs.db
