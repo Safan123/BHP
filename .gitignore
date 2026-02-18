@@ -12,6 +12,7 @@ __pycache__/
 venv/
 venv3/
 env/
+test.py
 
 # Systemowe
 .DS_Store
